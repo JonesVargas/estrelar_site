@@ -1,0 +1,271 @@
+{% extends "site_clinica/base.html" %}
+{% block title %}Clínica Estrelar{% endblock %}
+
+{% block content %}
+  <section class="hero moldura">
+
+    <!-- Onda superior (azul do tema) -->
+    <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="wave-top" aria-hidden="true">
+      <path fill="#118e9c"
+            d="M0,40 C120,70 240,10 360,20 480,30 600,80 720,70
+               840,60 960,20 1080,30 1200,40 1320,80 1440,60 L1440,0 L0,0 Z">
+      </path>
+    </svg>
+
+    <div class="container">
+      <div class="grid-hero">
+
+        <!-- Coluna esquerda -->
+        <div>
+          <h1>Um cuidado acolhedor para cada criança, com uma equipe multidisciplinar.</h1>
+          <p>
+            A Estrelar oferece acompanhamento individualizado, com acolhimento, respeito e orientação
+            para as famílias — em um ambiente leve, infantil e pensado para o bem-estar.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="#contato">Agendar contato</a>
+            <a class="btn secondary" href="#servicos">Ver serviços</a>
+          </div>
+
+          <div class="badges">
+            <div class="badge">Ambiente infantil e acolhedor</div>
+            <div class="badge">Equipe multidisciplinar</div>
+            <div class="badge">Orientação parental</div>
+          </div>
+        </div>
+
+        <!-- Coluna direita (card com desenho + infos) -->
+        <div class="hero-card">
+
+          <!-- “Desenho” em SVG -->
+          <svg class="doodle" viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustração infantil de crianças brincando">
+            <defs>
+              <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f6e28b" stop-opacity=".8"/>
+                <stop offset="1" stop-color="#118e9c" stop-opacity=".25"/>
+              </linearGradient>
+            </defs>
+
+            <rect x="14" y="14" width="492" height="392" rx="28" fill="url(#bg)" />
+            <circle cx="120" cy="130" r="44" fill="#ffffff" opacity=".9"/>
+            <circle cx="210" cy="110" r="30" fill="#ffffff" opacity=".85"/>
+            <circle cx="360" cy="140" r="52" fill="#ffffff" opacity=".88"/>
+            <circle cx="405" cy="105" r="26" fill="#ffffff" opacity=".82"/>
+
+            <!-- Criança 1 -->
+            <circle cx="165" cy="255" r="34" fill="#fff"/>
+            <rect x="135" y="292" width="60" height="70" rx="20" fill="#e9678c" opacity=".9"/>
+            <circle cx="153" cy="252" r="4" fill="#1f2d3d"/>
+            <circle cx="177" cy="252" r="4" fill="#1f2d3d"/>
+            <path d="M156 266 Q165 274 174 266" stroke="#1f2d3d" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+            <!-- Criança 2 -->
+            <circle cx="285" cy="250" r="34" fill="#fff"/>
+            <rect x="255" y="287" width="60" height="75" rx="20" fill="#118e9c" opacity=".85"/>
+            <circle cx="273" cy="246" r="4" fill="#1f2d3d"/>
+            <circle cx="297" cy="246" r="4" fill="#1f2d3d"/>
+            <path d="M276 262 Q285 270 294 262" stroke="#1f2d3d" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+            <!-- Brinquedos -->
+            <circle cx="225" cy="340" r="12" fill="#a88bff" opacity=".9"/>
+            <circle cx="245" cy="355" r="10" fill="#7ee6d4" opacity=".9"/>
+            <circle cx="205" cy="355" r="10" fill="#f6e28b" opacity=".95"/>
+
+            <!-- Caixa/pecinhas -->
+            <rect x="350" y="290" width="120" height="70" rx="18" fill="#ffffff" opacity=".85"/>
+            <rect x="366" y="304" width="24" height="24" rx="8" fill="#e9678c" opacity=".9"/>
+            <rect x="396" y="304" width="24" height="24" rx="8" fill="#118e9c" opacity=".85"/>
+            <rect x="426" y="304" width="24" height="24" rx="8" fill="#f6e28b" opacity=".95"/>
+
+            <text x="40" y="70" font-size="18" font-family="Arial" fill="#1f2d3d" opacity=".9">
+              Um espaço pensado para o bem-estar
+            </text>
+          </svg>
+
+          <div class="mini">
+            <div class="pill">
+              <b>Atendimento acolhedor</b>
+              <span>para crianças e famílias</span>
+            </div>
+            <div class="pill">
+              <b>Equipe integrada</b>
+              <span>multidisciplinar</span>
+            </div>
+            <div class="pill">
+              <b>Contato rápido</b>
+              <span>WhatsApp e Instagram</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Onda inferior (rosa do tema) -->
+    <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="wave-bottom" aria-hidden="true">
+      <path fill="#e9678c"
+            d="M0,60 C120,40 240,90 360,80 480,70 600,30 720,40
+               840,50 960,90 1080,80 1200,70 1320,30 1440,40 L1440,120 L0,120 Z">
+      </path>
+    </svg>
+
+  </section>
+
+  <section id="o-que-fazemos" class="section">
+    <div class="container">
+      <div class="panel">
+        <h2>O que fazemos</h2>
+        <p>
+          Nosso objetivo é acolher e apoiar a singularidade de cada criança, oferecendo um acompanhamento
+          individualizado, respeitando necessidades, potencialidades e particularidades.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="section">
+    <div class="container">
+      <h2>Nossos serviços</h2>
+      <p>Atendimentos organizados em um ambiente leve, com foco no desenvolvimento e no apoio às famílias.</p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon c1">ABA</div>
+          <h3>Terapia ABA</h3>
+          <p>Acompanhamento estruturado e individualizado, com metas e rotina organizada.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon c2">Ψ</div>
+          <h3>Psicologia</h3>
+          <p>Apoio emocional e comportamental para a criança e orientação para a família.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon c3">F</div>
+          <h3>Fonoaudiologia</h3>
+          <p>Desenvolvimento da comunicação, linguagem e habilidades necessárias no dia a dia.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon c1">PP</div>
+          <h3>Psicopedagogia</h3>
+          <p>Suporte para aprendizagem e desenvolvimento de habilidades cognitivas.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon c2">TO</div>
+          <h3>Terapia Ocupacional</h3>
+          <p>Trabalho com autonomia, rotina e participação nas atividades cotidianas.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon c3">PM</div>
+          <h3>Psicomotricidade</h3>
+          <p>Coordenação, equilíbrio, noção corporal e interação com o ambiente.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon c1">N</div>
+          <h3>Nutrição</h3>
+          <p>Orientação alimentar e suporte para hábitos saudáveis, com cuidado e acolhimento.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon c2">FIS</div>
+          <h3>Fisioterapia</h3>
+          <p>Suporte para desenvolvimento motor e funcional com técnicas apropriadas.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon c3">♪</div>
+          <h3>Musicoterapia</h3>
+          <p>Estímulos por meio da música para promover comunicação, vínculo e desenvolvimento.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon c2">OP</div>
+          <h3>Orientação Parental</h3>
+          <p>Estratégias e suporte para fortalecer a rotina e o cuidado em família.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="section">
+    <div class="container">
+      <h2>Como funciona</h2>
+      <p>Um fluxo simples e acolhedor, para a família se sentir segura desde o primeiro contato.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Primeiro contato</h3>
+          <p>Você chama no WhatsApp ou Instagram e a gente orienta sobre o atendimento.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Acolhimento e avaliação</h3>
+          <p>Entendemos as necessidades e definimos o plano de acompanhamento com a equipe.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Acompanhamento contínuo</h3>
+          <p>Atendimentos e orientações com revisões periódicas, mantendo a família por perto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Saiba onde nos encontrar</h2>
+      <p>Entre em contato — vai ser um prazer acolher você e sua família.</p>
+
+      <div class="contact-grid">
+        <div class="panel kv">
+          <div class="row">
+            <b>Endereço</b>
+            <span>Rua Liberdade, 1530 – Canoas/RS</span>
+          </div>
+
+          <div class="row">
+            <b>WhatsApp</b>
+            <a href="https://wa.me/5551997016416?text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20a%20Cl%C3%ADnica%20Estrelar."
+               target="_blank" rel="noopener">
+              (51) 99701-6416
+            </a>
+          </div>
+
+          <div class="row">
+            <b>Instagram</b>
+            <a href="https://www.instagram.com/estrelarclinica/"
+               target="_blank" rel="noopener">
+              @estrelarclinica
+            </a>
+          </div>
+
+          <div class="row">
+            <b>Atalhos</b>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:6px;">
+              <a class="btn primary" href="https://wa.me/5551997016416?text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20a%20Cl%C3%ADnica%20Estrelar." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+              <a class="btn secondary" href="https://www.instagram.com/estrelarclinica/" target="_blank" rel="noopener">Abrir Instagram</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="padding:0; overflow:hidden;">
+          <iframe
+            src="https://www.google.com/maps?q=Rua%20Liberdade,%201530,%20Canoas%20-%20RS&output=embed"
+            width="100%"
+            height="360"
+            style="border:0;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
