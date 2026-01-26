@@ -9,28 +9,32 @@
 </head>
 <body>
 
-  <header class="navbar">
-    <div class="container inner">
-      <div class="brand">
-  <img src="{% static 'img/icone_estrelar.jpg' %}"
-       alt="Clínica Estrelar"
-       class="logo">
+<header class="navbar">
+  <div class="container inner">
+    <a class="brand" href="{% url 'home' %}">
+      <img src="{% static 'img/icone_estrelar.jpg' %}" alt="Clínica Estrelar" class="logo">
+      <div class="name">
+        <strong>Estrelar</strong>
+        <small>Intervenção Comportamental</small>
+      </div>
+    </a>
 
-  <div class="name">
-    <strong>Estrelar</strong>
-    <small>Intervenção Comportamental</small>
-  </div>
-</div>
+    <!-- Botão mobile -->
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
 
-    <nav class="menu">
-        <a href="{% url 'home' %}">Início</a>
-        <a href="#o-que-fazemos">O que fazemos</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#contato">Contato</a>
+    <nav id="navMenu" class="menu" aria-label="Menu principal">
+      <a href="{% url 'home' %}">Início</a>
+      <a href="#o-que-fazemos">O que fazemos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#contato">Contato</a>
     </nav>
-    </div>
-  </header>
+  </div>
+</header>
+
+<script src="{% static 'js/navbar.js' %}"></script>
 
   {% block content %}{% endblock %}
 
