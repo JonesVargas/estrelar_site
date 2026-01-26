@@ -20,9 +20,12 @@
     </a>
 
     <!-- Botão mobile -->
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu">
-      <span></span><span></span><span></span>
-    </button>
+<button class="nav-toggle" type="button"
+        aria-expanded="false" aria-controls="navMenu"
+        aria-label="Abrir menu">
+  <img src="{% static 'img/autismo.png' %}" alt="Menu" class="puzzle-icon">
+</button>
+
 
     <nav id="navMenu" class="menu" aria-label="Menu principal">
       <a href="{% url 'home' %}">Início</a>
