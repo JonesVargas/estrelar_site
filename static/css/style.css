@@ -124,6 +124,7 @@ small{color:var(--texto-2)}
   transition:transform .25s ease,filter .25s ease;
 }
 
+
 .nav-toggle:hover .puzzle-icon{
   transform:scale(1.08);
   filter:brightness(1.05);
