@@ -21,10 +21,23 @@ DEBUG = os.environ.get("DEBUG", "True").lower() == "true"
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "estrelar-site.onrender.com",
+    "clinicaestrelar.com.br",
+    "www.clinicaestrelar.com.br",
+]
+
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
+
+# ✅ CSRF – domínios confiáveis
+CSRF_TRUSTED_ORIGINS = [
+    "https://clinicaestrelar.com.br",
+    "https://www.clinicaestrelar.com.br",
+]
 # =========================
 # APPLICATIONS
 # =========================
