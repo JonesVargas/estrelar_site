@@ -23,16 +23,8 @@ DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
 
-ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
-    "estrelar-site.onrender.com",
-    "clinicaestrelar.com.br",
-    "www.clinicaestrelar.com.br",
-    "estrelarsite-production.up.railway.app",
-    ".up.railway.app",
-    ".railway.app",
-]
+ALLOWED_HOSTS = ["*"]
+
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
