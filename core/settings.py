@@ -29,6 +29,9 @@ ALLOWED_HOSTS = [
     "estrelar-site.onrender.com",
     "clinicaestrelar.com.br",
     "www.clinicaestrelar.com.br",
+    "estrelarsite-production.up.railway.app",
+    ".up.railway.app",
+    ".railway.app",
 ]
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
@@ -38,6 +41,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://clinicaestrelar.com.br",
     "https://www.clinicaestrelar.com.br",
     "https://estrelar-site.onrender.com",
+    "https://estrelarsite-production.up.railway.app",
 ]
 
 # ✅ Render usa proxy/HTTPS (recomendado)
